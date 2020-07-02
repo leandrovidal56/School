@@ -1,23 +1,23 @@
 
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.createTable('teachers-students', {
+  up: (queryInterface, Sequelize) => queryInterface.createTable('class_subjects', {
     id: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
       primaryKey: true,
-      allowNUll: false,
+      allowNull: false,
     },
-    teacher: {
+    class_room_id: {
       type: Sequelize.INTEGER,
       allowNull: false,
-      references: { model: 'teachers', key: 'id' },
+      references: { model: 'class_rooms', key: 'id' },
       onDelete: 'CASCADE',
       onUpdate: 'CASCADE',
     },
-    student: {
+    subject: {
       type: Sequelize.INTEGER,
       allowNull: false,
-      references: { model: 'students', key: 'id' },
+      references: { model: 'subjects', key: 'id' },
       onDelete: 'CASCADE',
       onUpdate: 'CASCADE',
     },
@@ -29,8 +29,7 @@ module.exports = {
       type: Sequelize.DATE,
       allowNull: false,
     },
-
   }),
 
-  down: (queryInterface) => queryInterface.dropTable('teachers-students'),
+  down: (queryInterface) => queryInterface.dropTable('class-subjects'),
 };

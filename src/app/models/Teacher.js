@@ -13,17 +13,18 @@ class Teacher extends Model {
   }
 
   static associate(models) {
+    this.belongsTo(models.Test, { foreignKey: 'nota_id', as: 'nota' });
     this.belongsToMany(models.Student, {
       through: 'teachers-students',
       as: 'students',
-      // foreignKey: 'teacher_id',
       foreignKey: 'teacher',
-      // foreignKey: 'id',
+    });
+    this.belongsToMany(models.ClassRoom, {
+      through: 'class-teachers',
+      as: 'class',
+      foreignKey: 'teacher',
     });
   }
-  // static associate(models) {
-  //   this.belongsToMany(models.student, { foreignKey: 'teacher' });
-  // }
 }
 
 export default Teacher;

@@ -21,6 +21,8 @@ para rodar o projeto siga as seguintes instruçoes:
 
 - yarn dev
 
+
+
 ## Endpoint
 
 GET/student - usage in Get the students

@@ -1,15 +1,17 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Subject extends Model {
+class StudentAndTeacher extends Model {
   static init(sequelize) {
     super.init({
-      title: Sequelize.STRING,
+      teacher_id: Sequelize.INTEGER,
+      student_id: Sequelize.INTEGER,
     },
     {
       sequelize,
     });
+
     return this;
   }
 }
 
-export default Subject;
+export default StudentAndTeacher;

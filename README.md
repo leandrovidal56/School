@@ -50,11 +50,11 @@ POST/test - usage in Create the test
 
 
 ## Contribuidores
-<img src="https://avatars0.githubusercontent.com/u/39813875?s=460&v=4" width=115 > <br> <sub> Leandro Vidal </sub>](https://github.com/leandrovidal56)
+<<img src="https://avatars3.githubusercontent.com/u/48811222?s=460&u=6477dbd18720d1b6a16c870ec32e27465d2bdc5d&v=4" width=115><br><sub>Leandro Vidal</sub>](https://github.com/leandrovidal56)
 
 
 ## Autor
-<img src="https://avatars0.githubusercontent.com/u/39813875?s=460&v=4" width=115 >
+<img src="https://avatars3.githubusercontent.com/u/48811222?s=460&u=6477dbd18720d1b6a16c870ec32e27465d2bdc5d&v=4" width=115
 <br />
 <sub><b>Leandro vidal</b></sub></a>
 

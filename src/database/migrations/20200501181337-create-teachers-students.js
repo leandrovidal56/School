@@ -1,36 +1,23 @@
+'use strict';
 
 module.exports = {
-  up: (queryInterface, Sequelize) => queryInterface.createTable('teachers-students', {
-    id: {
-      type: Sequelize.INTEGER,
-      autoIncrement: true,
-      primaryKey: true,
-      allowNUll: false,
-    },
-    teacher: {
-      type: Sequelize.INTEGER,
-      allowNull: false,
-      references: { model: 'teachers', key: 'id' },
-      onDelete: 'CASCADE',
-      onUpdate: 'CASCADE',
-    },
-    student: {
-      type: Sequelize.INTEGER,
-      allowNull: false,
-      references: { model: 'students', key: 'id' },
-      onDelete: 'CASCADE',
-      onUpdate: 'CASCADE',
-    },
-    created_at: {
-      type: Sequelize.DATE,
-      allowNull: false,
-    },
-    updated_at: {
-      type: Sequelize.DATE,
-      allowNull: false,
-    },
+  up: (queryInterface, Sequelize) => {
+    /*
+      Add altering commands here.
+      Return a promise to correctly handle asynchronicity.
 
-  }),
+      Example:
+      return queryInterface.createTable('users', { id: Sequelize.INTEGER });
+    */
+  },
 
-  down: (queryInterface) => queryInterface.dropTable('teachers-students'),
+  down: (queryInterface, Sequelize) => {
+    /*
+      Add reverting commands here.
+      Return a promise to correctly handle asynchronicity.
+
+      Example:
+      return queryInterface.dropTable('users');
+    */
+  }
 };

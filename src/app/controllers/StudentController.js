@@ -1,24 +1,11 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-shadow */
 /* eslint-disable class-methods-use-this */
 import Student from '../models/Student';
-import teachers from '../models/Teacher';
-import Subject from '../models/Subject';
-import ClassRoom from '../models/ClassRoom';
+import Teacher from '../models/Teacher';
 
 class StudentController {
+  // eslint-disable-next-line class-methods-use-this
   async store(req, res) {
-    const {
-      teachers,
-      subjects,
-      class_rooms,
-      ...data
-    } = req.body;
-
-    const student = await Student.create(data);
-    student.setTeachers(teachers);
-    student.setSubjects(subjects);
-    student.setClass(class_rooms);
+    const student = await Student.create(req.body);
     return res.json(student);
   }
 
@@ -26,22 +13,15 @@ class StudentController {
     const student = await Student.findAll({
       include: [
         {
-          model: teachers,
+          model: Teacher,
           as: 'teachers',
-          through: { attributes: ['student', 'teacher'] },
-        },
-        {
-          model: Subject,
-          as: 'subjects',
-          through: { attributes: ['subject'] },
-        },
-        {
-          model: ClassRoom,
-          as: 'class',
-          through: {},
+          // through: { attributes: ['student_id', 'teacher_id'] },
+          through: { attributes: ['teacher_id'] },
+          // through: { attributes: [] },
         },
       ],
     });
+
     return res.json(student);
   }
 }

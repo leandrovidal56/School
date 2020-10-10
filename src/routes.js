@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import Student from './app/models/Student';
+// import Student from './app/models/Student';
 import StudentController from './app/controllers/StudentController';
 import TeacherController from './app/controllers/TeacherController';
 import SubjectController from './app/controllers/SubjectController';

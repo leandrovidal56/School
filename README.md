@@ -6,21 +6,36 @@ Esse projeto foi iniciado com uma modelagem de dados na qual segue o link abaixo
 
 https://excalidraw.com/#room=d1a5a995c340e71b43b9,TmSwWYm-Cb6k7M8CCc4XJA
 
+<img src="https://img.shields.io/github/issues/leandrovidal56/School" >
+<img src="https://img.shields.io/github/stars/leandrovidal56/School" >
 
-para rodar o projeto siga as seguintes instruçoes:
-## Prerequisites
+<p align="center">
+ <a href="#objetivo">Sobre</a> •
+ <a href="##Status">Status do Projeto</a> •
+ <a href="##Pré Requisitos">Tecnologias</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#contribuicao">Contribuição</a> •
+ <a href="#licenc-a">Licença</a> •
+ <a href="#autor">Autor</a>
+</p>
+
+## Status
+  ✅   Finalizado  ✅
+
+## Pré requisitos
 - docker start database
 
-## languages
+  # Installing
+  - git clone git@github.com:leandrovidal56/School.git
+
+  - yarn install
+
+  - docker run --name escola -p 6379:6370 -d -t redis:alpine
+
+  - yarn dev
+
+## Tecnologias
 - node.js
-
-## Installing
-- git clone git@github.com:leandrovidal56/School.git
-
-- yarn install
-
-- yarn dev
-
 
 
 ## Endpoint
@@ -33,5 +48,14 @@ POST/subject - usage in Create the subject
 POST/classroom - usage in Create the classroom
 POST/test - usage in Create the test
 
+
+## Contribuidores
+<img src="https://avatars0.githubusercontent.com/u/39813875?s=460&v=4" width=115 > <br> <sub> Leandro Vidal </sub>](https://github.com/leandrovidal56)
+
+
+## Autor
+<img src="https://avatars0.githubusercontent.com/u/39813875?s=460&v=4" width=115 >
+<br />
+<sub><b>Leandro vidal</b></sub></a>
 
 

@@ -13,10 +13,10 @@ https://excalidraw.com/#room=d1a5a995c340e71b43b9,TmSwWYm-Cb6k7M8CCc4XJA
  <a href="#objetivo">Sobre</a> •
  <a href="##Status">Status do Projeto</a> •
  <a href="##Pré Requisitos">Tecnologias</a> •
- <a href="#tecnologias">Tecnologias</a> •
- <a href="#contribuicao">Contribuição</a> •
- <a href="#licenc-a">Licença</a> •
- <a href="#autor">Autor</a>
+ <a href="##tecnologias">Tecnologias</a> •
+ <a href="##Endpoint">EndPoints</a> •
+ <a href="##contribuidores">Contribuição</a> •
+ <a href="##autor">Autor</a>
 </p>
 
 ## Status
